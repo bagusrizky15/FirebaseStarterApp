@@ -35,7 +35,7 @@
 		1773BFD0221FA51F005C82D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1773BFD3221FA51F005C82D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1773BFD5221FA51F005C82D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1773BFDC221FA7D0005C82D8 /* ATCClassicSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCClassicSignUpViewController.xib; sourceTree = "<group>"; };
+		1773BFDC221FA7D0005C82D8 /* ATCClassicSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ATCClassicSignUpViewController.xib; path = ../ATCClassicSignUpViewController.xib; sourceTree = "<group>"; };
 		1773BFDD221FA7D0005C82D8 /* ATCClassicSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCClassicSignUpViewController.swift; sourceTree = "<group>"; };
 		1773BFDE221FA7D0005C82D8 /* ATCClassicLandingScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCClassicLandingScreenViewController.xib; sourceTree = "<group>"; };
 		1773BFDF221FA7D0005C82D8 /* ATCClassicLandingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCClassicLandingScreenViewController.swift; sourceTree = "<group>"; };
@@ -104,12 +104,9 @@
 		1773BFDB221FA7D0005C82D8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1773BFDC221FA7D0005C82D8 /* ATCClassicSignUpViewController.xib */,
-				1773BFDD221FA7D0005C82D8 /* ATCClassicSignUpViewController.swift */,
-				1773BFDE221FA7D0005C82D8 /* ATCClassicLandingScreenViewController.xib */,
-				1773BFDF221FA7D0005C82D8 /* ATCClassicLandingScreenViewController.swift */,
-				1773BFE0221FA7D0005C82D8 /* ATCClassicLoginScreenViewController.swift */,
-				1773BFE1221FA7D0005C82D8 /* ATCClassicLoginScreenViewController.xib */,
+				962288CF2A7B998B00AD16B7 /* New Group */,
+				962288CE2A7B997C00AD16B7 /* SplashScreen */,
+				962288CD2A7B997200AD16B7 /* Login */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -133,6 +130,33 @@
 				5651F14D5CB6E681D3D70507 /* Pods_FirebaseStarterApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		962288CD2A7B997200AD16B7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1773BFE0221FA7D0005C82D8 /* ATCClassicLoginScreenViewController.swift */,
+				1773BFE1221FA7D0005C82D8 /* ATCClassicLoginScreenViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		962288CE2A7B997C00AD16B7 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1773BFDE221FA7D0005C82D8 /* ATCClassicLandingScreenViewController.xib */,
+				1773BFDF221FA7D0005C82D8 /* ATCClassicLandingScreenViewController.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		962288CF2A7B998B00AD16B7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				1773BFDC221FA7D0005C82D8 /* ATCClassicSignUpViewController.xib */,
+				1773BFDD221FA7D0005C82D8 /* ATCClassicSignUpViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		CBC48E8D33775F503B18D956 /* Pods */ = {
