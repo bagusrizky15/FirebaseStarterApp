@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATCClassicLandingScreenViewController" customModule="DashboardApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATCClassicLandingScreenViewController" customModule="FirebaseStarterApp" customModuleProvider="target">
             <connections>
                 <outlet property="loginButton" destination="WwR-b9-CIN" id="F3B-UW-k5J"/>
                 <outlet property="logoImageView" destination="8cb-fy-LD8" id="URT-Nf-Dcy"/>
@@ -28,36 +24,36 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idD-Tw-8az" userLabel="Container View">
-                    <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-fy-LD8">
-                            <rect key="frame" x="127.5" y="54" width="120" height="120"/>
+                            <rect key="frame" x="127.5" y="24" width="120" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="120" id="fmI-AT-mNJ"/>
                                 <constraint firstAttribute="height" constant="120" id="pXY-Fr-whh"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4x-YD-5iC" userLabel="Title Label">
-                            <rect key="frame" x="166.5" y="214" width="42" height="20.5"/>
+                            <rect key="frame" x="167" y="184" width="41.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFH-WL-F0P" userLabel="Subtitle Label">
-                            <rect key="frame" x="166.5" y="257.5" width="42" height="20.5"/>
+                            <rect key="frame" x="167" y="227.5" width="41.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwR-b9-CIN" userLabel="Login Button">
-                            <rect key="frame" x="50" y="323.5" width="275" height="55"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwR-b9-CIN" userLabel="Login Button">
+                            <rect key="frame" x="50" y="293.5" width="275" height="55"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="55" id="vGd-22-DK9"/>
                             </constraints>
                             <state key="normal" title="Button"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGN-m2-Ekx" userLabel="Sign Up Button">
-                            <rect key="frame" x="50" y="401.5" width="275" height="55"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGN-m2-Ekx" userLabel="Sign Up Button">
+                            <rect key="frame" x="50" y="371.5" width="275" height="55"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="55" id="9LN-nb-fDP"/>
                             </constraints>
@@ -83,6 +79,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="idD-Tw-8az" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Fl6-3A-ndB"/>
@@ -90,7 +87,6 @@
                 <constraint firstItem="idD-Tw-8az" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ohn-Xf-fJo"/>
                 <constraint firstItem="idD-Tw-8az" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="uaP-co-Hit"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>

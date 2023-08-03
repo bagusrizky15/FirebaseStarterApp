@@ -14,7 +14,7 @@ class ATCClassicLandingScreenViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var signUpButton: UIButton!
-
+    
     private let backgroundColor: UIColor = .white
     private let tintColor = UIColor(hexString: "#ff5a66")
     private let subtitleColor = UIColor(hexString: "#464646")
@@ -24,18 +24,20 @@ class ATCClassicLandingScreenViewController: UIViewController {
     private let titleFont = UIFont.boldSystemFont(ofSize: 30)
     private let subtitleFont = UIFont.boldSystemFont(ofSize: 18)
     private let buttonFont = UIFont.boldSystemFont(ofSize: 24)
+    private let createFont = UIFont.italicSystemFont(ofSize: 14)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         logoImageView.image = UIImage.localImage("logo", template: true)
         logoImageView.tintColor = tintColor
 
         titleLabel.font = titleFont
-        titleLabel.text = "Welcome to your app"
+        titleLabel.text = "Welcome mini app"
         titleLabel.textColor = tintColor
 
         subtitleLabel.font = subtitleFont
-        subtitleLabel.text = "Start your iOS app with this Firebase Swift Starter Kit."
+        subtitleLabel.text = "Auth using Firebase"
         subtitleLabel.textColor = subtitleColor
 
         loginButton.setTitle("Log in", for: .normal)
@@ -55,6 +57,21 @@ class ATCClassicLandingScreenViewController: UIViewController {
                                backgroundColor: backgroundColor,
                                borderWidth: 1)
         signUpButton.addTarget(self, action: #selector(didTapSignUpButton), for: .touchUpInside)
+                        
+        let createLabel = UILabel()
+        createLabel.font = createFont
+        createLabel.text = "by Bagus"
+        createLabel.textColor = .black
+        createLabel.textAlignment = .center
+        
+        self.view.addSubview(createLabel)
+        createLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            createLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            createLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            createLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            createLabel.heightAnchor.constraint(equalToConstant: 50)
+        ])
     }
 
     override func viewWillAppear(_ animated: Bool) {
